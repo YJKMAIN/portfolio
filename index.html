@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/jquery.fullPage.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <title>KIMYEJI PORTFOLIO</title>
+</head>
+<body>
+    <div id="video_area">
+        <video src="video/pexels_videos_2792967 (1440p).mp4" preload="auto" autoplay="autoplay" loop="loop" muted="muted" volume="0"></video>
+    </div>
+
+    <div class="wrap">
+        <header id="header">
+            <h1><a href="index.html"><img src="images/logo.svg" alt="logo"></a></h1>
+            <p>KIMYEJI PORTFOLIO</p>
+        </header>
+
+        <main id="fullpage">
+            <section class="section section1">
+                <div class="content_wrap">
+                    <h2>I'm <span class="tit_bg tit1">going to the</span><span class="tit_bg tit2">on the</span><span class="line-break">next level</span></h2>
+                    <p>banner / detail page / web publishing</p>
+                </div>
+                <div class="mouse_wrap">
+                    <p class="mouse_scroll"></p>
+                    <span>scroll down</span>
+                </div>
+            </section>
+            
+            <section class="section section2">
+                <p class="section-title">Site</p>
+                <p class="section-subtitle">리뉴얼 사이트 코딩</p>
+                
+                <div class="content-wrap">
+                    <div class="slide-container">
+                            <div class="slide-box">
+                                <div class="img-wrap">
+                                    <!--<img src="images/portfolio1.jpg" alt="커피빈 리뉴얼">-->
+                                </div>
+                                <div class="txt-wrap">
+                                    <p class="portfolio-title">Coffeebean</p>
+                                    <ul><li>하드코딩</li><li>100%완성</li>
+                                    <li>JQuery</li></ul>
+                                    <p class="portfolio-text">커피빈의 리뉴얼 사이트.<br>
+                                        당시 커피빈의 브라운 색상 컨셉을 기반으로<br>
+                                        모든 페이지를 하드코딩으로 구현한 사이트</p>
+                                    <a href="https://yjkmain.github.io/coffeebean1/">사이트 바로가기</a>
+                                </div>
+                            </div>
+                            <div class="slide-box">
+                                <div class="img-wrap">
+                                    <!--<img src="images/portfolio2.jpg" alt="전쟁기념관 리뉴얼">-->
+                                </div>
+                                <div class="txt-wrap">
+                                    <p class="portfolio-title">The War memorial of Korea</p>
+                                    <ul><li>하드코딩</li><li>반응형</li></ul>
+                                    <p class="portfolio-text">전쟁기념관의 리뉴얼 사이트.<br>
+                                        인덱스 페이지의 정보구성을 최소화하여 심플하게 제작<br>
+                                        반응형 사이트</p>
+                                    <a href="https://yjkmain.github.io/warMemorial/">사이트 바로가기</a>
+                                </div>
+                            </div>
+                            <div class="slide-box">
+                                <div class="img-wrap">
+                                    <!--<img src="images/portfolio3.jpg" alt="투두리스트">-->
+                                </div>
+                                <div class="txt-wrap">
+                                    <p class="portfolio-title">Todolist</p>
+                                    <ul><li>반응형</li><li>바닐라JS</li>
+                                    <li>JQuery</li></ul>
+                                    <p class="portfolio-text">투두리스트 앱.<br>날짜와 시간을 확인할 수 있고<br>위치를 기반으로 한 날씨를 체크할 수 있는 앱</p>
+                                    <a href="https://yjkmain.github.io/todolist/">사이트 바로가기</a>
+                                </div>
+                            </div>
+                    </div>
+                    <a href="#" id="prev" class="controls"><</a>
+                    <a href="#" id="next" class="controls">></a>
+                </div>
+            </section>
+            
+            <section class="section section3">
+                <section class="content_wrap">
+                    <p class="section-title">work</p>
+                    <p class="section-subtitle">저의 작업물들을 만나보세요!</p>
+                    <div class="card-wrap">
+                        <div class="card" id="card1" onclick="window.open('portfolio.pdf#page=3');"><p>Detail page</p></div>
+                        <div class="card" id="card2" onclick="window.open('portfolio.pdf#page=36');"><p>Banner</p></div>
+                        <div class="card" id="card3" onclick="window.open('portfolio.pdf#page=26');"><p>Package</p></div>
+                    </div>
+                    
+                </section>
+            </section>
+
+            <footer id="footer" class="section fp-auto-height">
+                <p>EAMIL : woqkthd@naver.com</p>
+                <p>본 페이지는 상업적 목적이 아닌<br>개인 포트폴리오용으로 제작되었습니다.</p>
+                <p>© 2024 Kim-Ye-Ji. All Rights Reserved.</p>
+            </footer>
+        </main>
+
+        
+        
+    </div>
+
+    <script src="script/main.js" ></script>
+    <script src="script/jquery.fullPage.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //options here
+                autoScrolling:true,
+                scrollHorizontally: true,
+                navigation:true,
+                navigationPosition:'right',
+                normalScrollElements:'.content-wrap',
+                controlArrows:false,
+                responsiveWidth:480
+            });
+
+        });
+    </script>
+</body>
+</html>
